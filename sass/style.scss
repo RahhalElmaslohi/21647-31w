@@ -19,8 +19,10 @@ Text Domain: underscore
 @import "variables/structure";
 @import "variables/polices";
 
-//normalize et box-sizing
+//normalize et box-sizing.
 @import "generic/box-sizing";
 @import "generic/normalize";
 
-//element
+//les elements de baseLine
+@import "base/body";
+@import "base/heading";
