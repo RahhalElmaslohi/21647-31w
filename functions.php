@@ -44,8 +44,8 @@ add_action( 'after_setup_theme', 'underscore_setup' );
 /**
  * Enqueue scripts and styles.
  */
-/*function underscore_scripts() {
-   wp_enqueue_style( 'underscore-style', 
+function underscore_scripts() {
+   /*wp_enqueue_style( 'underscore-style', 
                     get_stylesheet_uri(), 
                     array(), 
                     _S_VERSION );*/
