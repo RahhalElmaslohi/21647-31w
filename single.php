@@ -14,6 +14,7 @@
 ?>
 
 <?php get_header(); ?>
+<h1 class="trace">single.php</h1>
     <main>
         test
     <?php
