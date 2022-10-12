@@ -14,7 +14,7 @@
 ?>
 
 <?php get_header(); ?>
-<h1>front-page</h1>
+<h1>front--page</h1>
     <main>
         test
     <?php
