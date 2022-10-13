@@ -25,9 +25,10 @@
                 the_content(null, true);?>
                 <section>
                     <small>
-                        <span><?php the_weekday(); ?></span> 
                         <span><?php the_date(); ?></span> 
-                        <span><?php the_time(); ?></span>  
+                        <span><?php the_time(); ?></span>
+                        <span><?php the_weekday(); ?></span> 
+                       
                     </small>
                     <code><?php the_author(); ?></code>
                     <pre><?php the_category(); ?></pre>
