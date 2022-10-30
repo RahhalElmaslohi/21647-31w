@@ -27,3 +27,19 @@ Text Domain: 31W
 @import "base/body";
 @import "base/heading";
 @import "base/simple";
+@import "base/links";
+@import "base/buttons";
+@import "base/fields";
+@import "base/hr";
+@import "base/lists";
+@import "base/media";
+
+// Les composants
+@import "composants/nav_principal";
+@import "composants/nav_aside";
+@import "composants/entete";
+
+// Layout
+
+@import "layouts/sidebar-content";
+
