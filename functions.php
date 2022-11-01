@@ -96,3 +96,61 @@ function igc31w_filtre_choix_menu($obj_menu){
 
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu");
+
+/**----------------------------------------------------------------------Initialisation des sidebar */
+add_action( 'widgets_init', 'my_register_sidebars' );
+function my_register_sidebars() {
+
+
+	/* Register the 'footer-1' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'footer-1',
+			'name'          => __( 'Sidebar - footer-1' ),
+			'description'   => __( 'Premier sidebar du footer' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	
+	/* Register the 'footer-2' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'footer-2',
+			'name'          => __( 'Sidebar - footer-2' ),
+			'description'   => __( 'Deuxiem sidebar du footer' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	
+		/* Register the 'footer-3' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'footer-3',
+			'name'          => __( 'Sidebar - footer-3' ),
+			'description'   => __( 'troisiem sidebar du footer' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+			/* Register the 'footer-4' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'footer-4',
+			'name'          => __( 'Sidebar - footer-4' ),
+			'description'   => __( 'troisiem sidebar du footer' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+}
