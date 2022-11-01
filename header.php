@@ -58,4 +58,8 @@ _____________________________________________ -->
 						"container" => "nav",
 						"container_class" => "menu__aside"
 			)); ?>
+						<aside class="widget__area-2">
+				<?php get_sidebar( 'aside-1' ); ?>
+				<?php get_sidebar( 'aside-2' ); ?>
+			</aside>
 			</aside>
