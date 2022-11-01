@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The main template file
@@ -14,23 +15,23 @@
 ?>
 
 <?php get_header(); ?>
-    <main>
-        test
+
+    <main class="site__main">
     <?php
-        if ( have_posts() ) :
+		if ( have_posts() ) :
             while ( have_posts() ) :
-                the_post();
-<<<<<<< HEAD
-                the_title('<h2>','</h2>');
-=======
-                the_title('<h1>','<h1>');
->>>>>>> main
+				the_post(); 
+                the_title('<h1>','</h1>');
                 the_content(null, true);
             endwhile;
         endif;
-    ?>
-    </main>
-<?php get_footer();?>
+    ?>    
+    </main> 
+<?php get_footer(); ?>
+</html>
+
+
+
 
 
 
