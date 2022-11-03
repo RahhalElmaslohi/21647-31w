@@ -22,7 +22,8 @@
 				the_post(); ?>
                 <h1><a href="<?php the_permalink(); ?>">
                 <?php the_title(); ?></a></h1>
-                
+                <h2>Durée de cours<?php the_field('duree'); ?></h2>
+                <h2>Titre du cours<?php the_field('titre'); ?></h2>
                 <?php the_content(null, true); ?>
                 
             <?php endwhile; ?>
