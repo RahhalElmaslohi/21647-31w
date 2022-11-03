@@ -12,7 +12,7 @@
  * @package underscore
  */
 ?>
-<h1 class="trace"> front-page.php</h1>
+<!-- <h1 class="trace"> front-page.php</h1> -->
 <?php get_header(); ?>
 
 <main class="site__main">
@@ -20,7 +20,9 @@
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); ?>
-                <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                <h1><a href="<?php the_permalink(); ?>">
+                <?php the_title(); ?></a></h1>
+                <h2>Durée de cours<?php the_field('duree'); ?></h2>
                 <?php the_content(null, true); ?>
                 
             <?php endwhile; ?>
