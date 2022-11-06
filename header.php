@@ -19,25 +19,18 @@
 
 	<?php wp_head(); ?>
 </head>
-<!-- _____________________________________________
 
-
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<h1 class="site-title">
-	<header id="masthead" class="site__header">
-_____________________________________________ -->
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-
 	<header id="masthead" class="site__header">
-			<?php wp_nav_menu(array(
-		"menu" => "primaire",
-		"container" => "nav",
-		"container_class" => "menu__principal"
-	)); ?>
+
+	<?php  /* Affichage du menu principal */
+			wp_nav_menu(array(
+			"menu" => "primaire",
+			"container" => "nav",
+			"container_class" => "menu__principal")); ?>
+
 		<div class="site__branding">
 			<h1 class="site__title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
@@ -50,16 +43,19 @@ _____________________________________________ -->
 		</div><!-- .site-branding -->
 
 	</header><!-- #masthead -->
+	<aside class="site__menu">
+		<input type="checkbox" name="chk-burger" id="chk-burger" class="chk-burger">
+		<label class="burger" for="chk-burger">&#11135;</label>
 
-	<aside class="widget__area">
-			<h2>Menu Secondaire</h2>
-			<?php wp_nav_menu(array(
-						"menu" => "aside",
-						"container" => "nav",
-						"container_class" => "menu__aside"
-			)); ?>
-						<aside class="widget__area-2">
-				<?php get_sidebar( 'aside-1' ); ?>
-				<?php get_sidebar( 'aside-2' ); ?>
-			</aside>
-			</aside>
+		<?php wp_nav_menu(array(
+					"menu" => "aside",
+					"container" => "nav",
+					"container_class" => "menu__aside"
+		));
+		?>
+	</aside>
+	<aside class="site__sidebar">
+<div><?php get_sidebar( 'aside-1' ); ?></div>
+<div><?php get_sidebar( 'aside-2' ); ?></div>
+	</aside>
+
