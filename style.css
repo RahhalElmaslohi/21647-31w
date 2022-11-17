@@ -703,6 +703,10 @@ dd {
   border: 1px solid burlywood;
 }
 
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .site__footer {
   display: flex;
   justify-content: space-around;

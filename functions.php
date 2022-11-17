@@ -201,3 +201,4 @@ function my_register_sidebars() {
 		)
 	);
 }
+
