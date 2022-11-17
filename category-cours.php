@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The main template file
@@ -12,25 +13,31 @@
  * @package underscore
  */
 ?>
-<!-- <h1 class="trace"> front-page.php</h1> -->
+<!-- h1 class="trace">front-page.php</h1                         //wp_trim_words()       -->
 <?php get_header(); ?>
 
-<main class="site__main">
+    <main class="site__main">
+        <section class="liste">
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); ?>
+            <article class="liste__cours">
                 <h1><a href="<?php the_permalink(); ?>">
                 <?php the_title(); ?></a></h1>
-                <h2>Durée de cours<?php the_field('duree'); ?></h2>
-                <h2>Titre du cours<?php the_field('titre'); ?></h2>
+                <h2>Durée du cours: <?php the_field('duree'); ?></h2>
                 <?php the_content(null, true); ?>
-                
+               
+            </article>
             <?php endwhile; ?>
         <?php endif; ?>
-    ?>    
+        </section>
     </main>    
-<?php get_footer();?>
+<?php get_footer(); ?>
+</html>
+
+
+
 
 
 

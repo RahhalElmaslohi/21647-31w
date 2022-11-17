@@ -202,3 +202,16 @@ function my_register_sidebars() {
 	);
 }
 
+/**
+ *
+ *	la fonction permettera de modifier la requete principale de wordpress "main querry",
+ *	les article qui s'afficheront dans la page d'accueil seront de les articles de categorie accueil
+ *
+ */
+	function igc_31w_filtre_requete( $query ) {
+		if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+			$query->set( 'category_name', 'accueil' );
+		}
+	}
+	add_action( 'pre_get_posts', 'igc_31w_filtre_requete' );
+
