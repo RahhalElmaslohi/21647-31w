@@ -5,8 +5,31 @@
 
     list-style-type: none;
     display: flex;
-    width: 25%;
+    justify-content: space-around;
     border: 1px solid darkgray;
 }
 
-.menu__evenement .menu-item{}
+.menu__evenement .menu-item{
+    width: 25%;
+}
+.menu__evenement .menu-item a{
+    text-decoration: none;
+}
+.evenement__projet{
+    background-color: aqua;
+}
+.evenement__stage{
+    background-color: blue;
+}
+.evenement__porte{
+    background-color: blueviolet;
+}
+.menu__item__icone{
+    width: 50px;
+    height: 50px;
+    border: 1px solid burlywood;
+}
+
+.evenement__porte .menu__item__icone{}
+.evenement__projet .menu__item__icone{}
+.evenement__stage .menu__item__icone{}

@@ -96,6 +96,25 @@ function igc31w_filtre_choix_menu($obj_menu){
 
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu");
+/* ----------------------------------------------------------- Ajout de la description dans menu */
+/**
+ * filtre de menu evenement
+ *
+ * @param [string] $item_output    string representent l'element du menu
+ * @param objet $item     element du menu
+ * 
+ */
+function prefix_nav_description( $item_output, $item) {
+    if ( !empty( $item->description ) ) {
+        $item_output = str_replace( '</a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu__item__icone"></div></a>',
+              $item_output );
+    }
+    return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
+// l'argument 10 : niveau de privilège
+// l'argument 2 : le nombre d'argument dans la fonction de rappel: «prefix_nav_description»
 
 /**----------------------------------------------------------------------Initialisation des sidebar */
 add_action( 'widgets_init', 'my_register_sidebars' );
