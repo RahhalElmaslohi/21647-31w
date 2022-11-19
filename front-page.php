@@ -32,7 +32,26 @@
                 <?php if ( has_post_thumbnail() ) {
 	                the_post_thumbnail('thumbnail');
                 } ?>
-                <?= wp_trim_words(get_the_excerpt(),10," ... ");?>
+                <?php
+                $montableau = get_the_category();
+                $boolGalerie = false;
+                foreach($montableau as $cle){
+                    if ($cle->slug == "galerie"){
+                        $boolGalerie = true;
+                    };
+                }
+                if($boolGalerie == true)
+                {
+                    the_content();
+
+                }
+                else{
+                    echo wp_trim_words(get_the_excerpt(),10," ... "); 
+                }
+                
+                
+               ?>
+
                 </article>
             <?php endwhile; ?>
        <?php endif; ?>
