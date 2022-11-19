@@ -22,6 +22,11 @@ function underscore_setup() {
 		* provide it for us.
 		*/
 	add_theme_support( 'title-tag' );
+	
+	add_theme_support( 'custom-logo', array(
+		'height' => 480,
+		'width'  => 720,
+	) );
 
 
     /*

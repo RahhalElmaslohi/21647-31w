@@ -795,3 +795,9 @@ dd {
     grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+
+.btn_modale{
+  display: none;
+}
