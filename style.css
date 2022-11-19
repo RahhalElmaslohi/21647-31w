@@ -549,7 +549,7 @@ img {
   display: block;
   object-fit: cover;
   height: auto;
-  max-width: 100%;
+  max-width: 70%;
 }
 
 figure {
@@ -600,7 +600,7 @@ dd {
 .menu__principal a {
   display: block;
   text-decoration: none;
-  background-color: rgb(80, 230, 66);
+  background-color: rgb(60, 134, 165);
   color: #fff;
   padding: 10px;
 }
@@ -716,7 +716,7 @@ dd {
 .site__footer div {
   flex: 1;
   width: 20%;
-  border: 1px dotted rgb(16, 219, 16);
+  border: 1px dotted rgb(17, 188, 241);
   align-items: center;
 }
 
@@ -745,7 +745,7 @@ dd {
 
 .site__footer {
   grid-area: footer;
-  background-color: #000;
+  background-color: rgb(86, 118, 43);
 }
 
 .site {
