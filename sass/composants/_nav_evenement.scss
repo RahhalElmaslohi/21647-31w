@@ -33,7 +33,9 @@
     border: 1px solid burlywood;
 }
 
-.evenement__porte .menu__item__icone{}
+.evenement__porte .menu__item__icone{
+    background-image: url('./wp-content/2020/10/1e.jpg') ;
+}
 .evenement__projet .menu__item__icone{}
 .evenement__stage .menu__item__icone{}
 .menu-item:hover{

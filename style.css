@@ -423,13 +423,13 @@ big {
 }
 
 a {
-  color: #55f;
+  color: rgb(8, 8, 241);
 }
 a:visited {
-  color: #3f3;
+  color: rgb(82, 116, 229);
 }
 a:hover, a:focus, a:active {
-  color: #8f8;
+  color: rgb(38, 140, 235);
 }
 a:focus {
   outline: thin dotted;
@@ -440,7 +440,7 @@ a:hover, a:active {
 
 /* ------------------------------------------------  .menu__aside  */
 .menu__aside a {
-  color: rgb(23, 105, 219);
+  color: rgb(10, 56, 120);
 }
 .menu__aside a:visited {
   color: rgb(12, 63, 76);
@@ -600,7 +600,7 @@ dd {
 .menu__principal a {
   display: block;
   text-decoration: none;
-  background-color: rgb(60, 134, 165);
+  background-color: rgb(235, 41, 27);
   color: #fff;
   padding: 10px;
 }
@@ -644,7 +644,7 @@ dd {
   top: 70px;
   transform: translateX(-100vw);
   transition: transform 0.5s;
-  background-color: rgb(88, 238, 116);
+  background-color: rgb(236, 205, 7);
 }
 @media screen and (min-width: 700px) {
   .menu__aside {
@@ -701,6 +701,10 @@ dd {
   width: 50px;
   height: 50px;
   border: 1px solid burlywood;
+}
+
+.evenement__porte .menu__item__icone {
+  background-image: url("./wp-content/2020/10/1e.jpg");
 }
 
 .menu-item:hover {
@@ -762,7 +766,6 @@ dd {
 
 .liste {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
