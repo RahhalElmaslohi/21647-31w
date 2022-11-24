@@ -29,8 +29,8 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<header id="masthead" class="site__header">
-	<a href="/wordpress/search-page/" title="Search Page">Search Page</a>
-	<div><?php get_sidebar( 'aside-search' ); ?></div>
+	
+	<div><?php get_sidebar( 'side-search' ); ?></div>
 
 	<?php  /* Affichage du menu principal */
 			wp_nav_menu(array(
