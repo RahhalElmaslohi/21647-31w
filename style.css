@@ -704,7 +704,7 @@ dd {
 }
 
 .evenement__porte .menu__item__icone {
-  background-image: url("./wp-content/2020/10/1e.jpg");
+  background-image: url(/wp-content/uploads/2022/10/hero.jpg);
 }
 
 .menu-item:hover {
@@ -765,7 +765,6 @@ dd {
 }
 
 .liste {
-  display: flex;
   flex-wrap: wrap;
 }
 
