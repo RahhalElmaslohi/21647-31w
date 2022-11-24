@@ -53,9 +53,22 @@
     padding: 5px 3px;
   }
 }
-/*
-.menu__aside{}
-.menu__aside .menu {}
-.menu__aside .menu-item {}
-.menu__aside a {}
-*/
+
+.menu__aside{
+  list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__aside .menu {
+  list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__aside .menu-item {list-style-type: none;
+  padding: 0;
+  margin: 0;}
+.menu__aside a {
+  list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
