@@ -213,7 +213,7 @@ function my_register_sidebars() {
 	register_sidebar(
 		array(
 			'id'            => 'side-search',
-			'name'          => __( 'Sidebar - aside-search' ),
+			'name'          => __( 'Sidebar - side-search' ),
 			'description'   => __( 'Premiere widget de l\'aside' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',

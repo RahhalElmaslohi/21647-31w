@@ -1,3 +1,3 @@
-<div id="side-icon" class="sidebar__icon">
-	<?php dynamic_sidebar( 'side-icon' ); ?>
+<div id="sidebar-icon" class="sidebar">
+	<?php dynamic_sidebar( 'sidebar-icon' ); ?>
 </div>

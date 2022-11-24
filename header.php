@@ -30,6 +30,8 @@
 <div id="page" class="site">
 	<header id="masthead" class="site__header">
 	
+
+	
 	
 
 	<?php  /* Affichage du menu principal */
@@ -49,7 +51,7 @@
 			<p class="site__description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>	
 		</div><!-- .site-branding -->
-		<div><?php get_sidebar( 'side-search' ); ?></div>
+	
 
 	
 
@@ -66,8 +68,11 @@
 		?>
 	</aside>
 	<aside class="site__sidebar">
+<div><?php get_sidebar( 'side-search' ); ?></div>
+<div><?php get_sidebar( 'side-icon' ); ?></div>
 <div><?php get_sidebar( 'aside-1' ); ?></div>
 <div><?php get_sidebar( 'aside-2' ); ?></div>
+
 
 
 	</aside>
