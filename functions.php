@@ -209,6 +209,18 @@ function my_register_sidebars() {
 			'after_title'   => '</h3>',
 		)
 	);
+  /* Register the 'aside search */
+	register_sidebar(
+		array(
+			'id'            => 'aside-search',
+			'name'          => __( 'Sidebar - aside-search' ),
+			'description'   => __( 'Premiere widget de l\'aside' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 }
 
 /**
