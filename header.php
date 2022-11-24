@@ -29,6 +29,7 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<header id="masthead" class="site__header">
+	<a href="/wordpress/search-page/" title="Search Page">Search Page</a>
 
 	<?php  /* Affichage du menu principal */
 			wp_nav_menu(array(
@@ -47,6 +48,8 @@
 			<p class="site__description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>	
 		</div><!-- .site-branding -->
+
+	
 
 	</header><!-- #masthead -->
 	<aside class="site__menu">
