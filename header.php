@@ -41,6 +41,13 @@
 			"container_class" => "menu__principal")); ?>
 
 		<div class="site__branding">
+		<aside class="site__sidebar1">
+<div class="side-recherch">
+<div><?php get_sidebar( 'recherch' ); ?></div>
+<div><?php get_sidebar( 'icone' ); ?></div>
+</div>
+
+</aside>
 		<?= get_custom_logo(  ); ?>
 			<h1 class="site__title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
@@ -68,10 +75,12 @@
 		?>
 	</aside>
 	<aside class="site__sidebar">
-<div><?php get_sidebar( 'side-search' ); ?></div>
-<div><?php get_sidebar( 'side-icon' ); ?></div>
+
+
 <div><?php get_sidebar( 'aside-1' ); ?></div>
 <div><?php get_sidebar( 'aside-2' ); ?></div>
+
+
 
 
 

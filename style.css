@@ -775,6 +775,14 @@ dd {
   grid-template-columns: auto;
   grid-template-areas: "menu" "header" "main" "sidebar" "footer";
 }
+.side-recherch {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.side-recherch>div {
+  max-width: 30%;
+}
 @media screen and (min-width: 700px) {
   .site {
     grid-template-columns: 25% auto;

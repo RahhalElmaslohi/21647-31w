@@ -163,7 +163,7 @@ function my_register_sidebars() {
 		array(
 			'id'            => 'footer-3',
 			'name'          => __( 'Sidebar - footer-3' ),
-			'description'   => __( 'troisiem sidebar du footer' ),
+			'description'   => __( 'Troisiéme sidebar du footer' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -176,7 +176,7 @@ function my_register_sidebars() {
 		array(
 			'id'            => 'footer-4',
 			'name'          => __( 'Sidebar - footer-4' ),
-			'description'   => __( 'troisiem sidebar du footer' ),
+			'description'   => __( 'Quatriéme sidebar du footer' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -212,9 +212,9 @@ function my_register_sidebars() {
   /* Register the 'aside search */
 	register_sidebar(
 		array(
-			'id'            => 'side-search',
-			'name'          => __( 'Sidebar - side-search' ),
-			'description'   => __( 'Premiere widget de l\'aside' ),
+			'id'            => 'recherch',
+			'name'          => __( 'Sidebar - recherch' ),
+			'description'   => __( 'Troisiéme widget de l\'aside' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -225,15 +225,18 @@ function my_register_sidebars() {
 	 /* Register the 'aside search */
 	 register_sidebar(
 		array(
-			'id'            => 'side-icon',
-			'name'          => __( 'Sidebar - side-icon' ),
-			'description'   => __( 'Premiere widget de l\'aside' ),
+			'id'            => 'icone',
+			'name'          => __( 'Sidebar - icone' ),
+			'description'   => __( 'Quatriéme widget de l\'entete' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',
 		)
 	);
+
+	
+	
 
 }
 
